@@ -52,5 +52,5 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 
 //    implementation project(':imageloader')
-    implementation 'com.henley.android:imageloader:1.0.0'
+    implementation 'com.henley.android:imageloader:1.0.1'
 }

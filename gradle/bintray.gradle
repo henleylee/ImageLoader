@@ -21,7 +21,7 @@ publish {
     userOrg = 'henleylee'
     groupId = 'com.henley.android'
     artifactId = 'imageloader'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     uploadName = 'ImageLoader'
     desc = 'Android 图片加载框架封装(策略模式)。'
     website = siteUrl

@@ -4,8 +4,6 @@ import android.Manifest;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -16,9 +14,13 @@ import com.henley.imageloader.SimpleImageLoadingListener;
 
 import java.io.File;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String URL_IMAGE = "https://ws1.sinaimg.cn/large/0065oQSqly1fytdr77urlj30sg10najf.jpg";
+//    private static final String URL_IMAGE = "https://ae01.alicdn.com/kf/U58f118db979642b5bae964a68f37e23eS.jpg";
+    private static final String URL_IMAGE = "https://ae01.alicdn.com/kf/U76a18e0d315e407a8daf3d91de033e31i.jpg";
     private ImageView ivPicture;
     private ImageOptions imageOptions;
     private Toast toast;

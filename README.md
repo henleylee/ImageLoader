@@ -9,7 +9,7 @@
 ### Gradle ###
 ```gradle
 dependencies {
-    implementation 'com.henley.android:imageloader:1.0.1'
+    implementation 'com.henley.android:imageloader:1.0.2'
 }
 ```
 

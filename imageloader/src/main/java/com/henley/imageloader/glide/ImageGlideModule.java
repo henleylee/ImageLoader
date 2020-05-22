@@ -1,7 +1,6 @@
 package com.henley.imageloader.glide;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.bumptech.glide.GlideBuilder;
@@ -14,14 +13,14 @@ import com.bumptech.glide.load.engine.cache.MemorySizeCalculator;
 import com.bumptech.glide.load.engine.executor.GlideExecutor;
 import com.bumptech.glide.module.AppGlideModule;
 import com.bumptech.glide.request.RequestOptions;
-import com.bumptech.glide.request.target.ImageViewTarget;
-import com.henley.imageloader.R;
+
+import androidx.annotation.NonNull;
 
 /**
  * Glide配置
  *
  * @author Henley
- * @date 2019/3/29 16:55
+ * @since 2019/3/29 16:55
  */
 @GlideModule
 public class ImageGlideModule extends AppGlideModule {
@@ -40,9 +39,6 @@ public class ImageGlideModule extends AppGlideModule {
         super.applyOptions(context, builder);
         Log.i(TAG, "AppGlideModule初始化...");
 
-        // 设置全局ViewTaget的tagId
-        ImageViewTarget.setTagId(R.id.glide_tag);
-
         // 设置日志级别
         builder.setLogLevel(Log.DEBUG);
 
@@ -52,7 +48,11 @@ public class ImageGlideModule extends AppGlideModule {
         builder.setBitmapPool(new LruBitmapPool(calculator.getBitmapPoolSize()));
 
         // 设置磁盘缓存
-        builder.setDiskCache(new ExternalPreferredCacheDiskCacheFactory(context, DISK_CACHE_NAME, DISK_CACHE_SIZE));
+        builder.setDiskCache(new ExternalPreferredCacheDiskCacheFactory(
+                context,
+                DISK_CACHE_NAME,
+                DISK_CACHE_SIZE
+        ));
 
         // 设置默认的请求选项
         builder.setDefaultRequestOptions(
@@ -63,9 +63,8 @@ public class ImageGlideModule extends AppGlideModule {
         );
 
         // 设置处理未捕获异常的策略
-        final GlideUncaughtThrowableStrategy strategy = new GlideUncaughtThrowableStrategy();
-        builder.setDiskCacheExecutor(GlideExecutor.newDiskCacheExecutor(strategy));
-        builder.setSourceExecutor(GlideExecutor.newSourceExecutor(strategy));
+        builder.setSourceExecutor(GlideExecutor.newSourceExecutor());
+        builder.setDiskCacheExecutor(GlideExecutor.newDiskCacheExecutor());
     }
 
 }

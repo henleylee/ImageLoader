@@ -2,18 +2,19 @@ package com.henley.imageloader;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.widget.ImageView;
 
 import com.henley.imageloader.glide.GlideImageLoaderStrategy;
 
 import java.io.File;
 
+import androidx.annotation.NonNull;
+
 /**
  * 图片加载辅助类
  *
  * @author Henley
- * @date 2016/12/12 17:56
+ * @since 2016/12/12 17:56
  */
 public class ImageLoaderHelper implements BaseImageLoaderHelper {
 

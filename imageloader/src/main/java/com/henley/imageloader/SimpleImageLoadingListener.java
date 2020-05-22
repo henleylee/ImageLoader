@@ -6,7 +6,7 @@ import android.widget.ImageView;
  * 图片加载监听接口的空实现
  *
  * @author Henley
- * @date 2019/4/18 17:47
+ * @since 2019/4/18 17:47
  */
 public class SimpleImageLoadingListener implements ImageLoadingListener {
 

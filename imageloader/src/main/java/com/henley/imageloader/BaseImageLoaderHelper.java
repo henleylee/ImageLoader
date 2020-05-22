@@ -4,7 +4,7 @@ package com.henley.imageloader;
  * 图片加载辅助类接口
  *
  * @author Henley
- * @date 2017/3/31 10:19
+ * @since 2017/3/31 10:19
  */
 public interface BaseImageLoaderHelper extends ImageLoaderStrategy {
 

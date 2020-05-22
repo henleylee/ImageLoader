@@ -1,15 +1,15 @@
 package com.henley.imageloader.model;
 
-import android.support.annotation.IntDef;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * 裁剪类型
  *
  * @author Henley
- * @date 2017/3/31 9:44
+ * @since 2017/3/31 9:44
  */
 @IntDef({
         CropType.CENTER_CROP,

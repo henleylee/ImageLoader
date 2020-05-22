@@ -1,6 +1,6 @@
 package com.henley.imageloader;
 
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -12,7 +12,7 @@ import com.henley.imageloader.model.ImageType;
 
 /**
  * @author Henley
- * @date 2019/3/29 11:23
+ * @since 2019/3/29 11:23
  */
 public class ImageOptions {
 

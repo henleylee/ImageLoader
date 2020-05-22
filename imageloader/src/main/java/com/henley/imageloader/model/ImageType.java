@@ -1,15 +1,15 @@
 package com.henley.imageloader.model;
 
-import android.support.annotation.IntDef;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
 
 /**
  * 图片类型
  *
  * @author Henley
- * @date 2017/3/31 9:44
+ * @since 2017/3/31 9:44
  */
 @IntDef({
         ImageType.BITMAP,

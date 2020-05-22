@@ -6,7 +6,7 @@ import android.widget.ImageView;
  * 图片加载监听接口
  *
  * @author Henley
- * @date 2017/2/9 13:43
+ * @since 2017/2/9 13:43
  */
 public interface ImageLoadingListener {
 

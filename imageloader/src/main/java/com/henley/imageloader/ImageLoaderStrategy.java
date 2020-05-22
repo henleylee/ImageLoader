@@ -10,7 +10,7 @@ import java.io.File;
  * 图片加载策略接口
  *
  * @author Henley
- * @date 2016/12/12 16:45
+ * @since 2016/12/12 16:45
  */
 public interface ImageLoaderStrategy {
 
